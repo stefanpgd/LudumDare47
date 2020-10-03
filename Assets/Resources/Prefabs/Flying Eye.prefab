@@ -48,14 +48,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d110ee16d527494abec24e1038f2464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyHealth: 3
+  ShootPosition: {fileID: 6138268355402731542}
   Target: {fileID: 0}
-  MoveSpeed: 3.5
-  AttackRange: 2
+  Projectile: {fileID: 4010012775032517240, guid: 9c3b19ddf13aa8d4bb2a068c89926333,
+    type: 3}
   Ranged: 1
-  ShootPosition: {fileID: 8201186107456694905}
-  Projectile: {fileID: 0}
+  MoveSpeed: 3.5
+  StoppingDistance: 5
   ShootDelay: 2
-  ProjectileSpeed: 3
 --- !u!50 &7796990249131055379
 Rigidbody2D:
   serializedVersion: 4
@@ -87,7 +88,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
