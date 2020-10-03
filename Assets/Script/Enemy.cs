@@ -11,11 +11,11 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        if (Target = null)
+        if (Target == null)
             Target = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void Update()
+    private void Update()
     {
         FollowTarget();
     }
