@@ -11,6 +11,11 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public float bulletSpeed = 5f;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     private void Update()
     {
         mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
