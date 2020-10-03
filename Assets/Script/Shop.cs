@@ -7,6 +7,7 @@ public class Shop : MonoBehaviour
     private ResourceManager resourceManager;
     private PlayerHealth playerHealth;
     private bool IsPlayerNear;
+    [SerializeField] private List<Animator> animators;
 
     private void Start()
     {
@@ -46,6 +47,11 @@ public class Shop : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             IsPlayerNear = true;
+
+            foreach(Animator anim in animators)
+            {
+                anim.SetBool("show", true);
+            }
         }
     }
 
@@ -54,6 +60,11 @@ public class Shop : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             IsPlayerNear = false;
+
+            foreach (Animator anim in animators)
+            {
+                anim.SetBool("show", false);
+            }
         }
     }
 }
