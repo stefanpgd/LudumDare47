@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+#pragma warning disable 649
 
 public class Enemy : MonoBehaviour
 {
@@ -52,6 +51,15 @@ public class Enemy : MonoBehaviour
         else
         {
             ShootDelay -= Time.deltaTime;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Arrow")
+        {
+            EnemyHealth--;
+            Destroy(collision.gameObject);
         }
     }
 }

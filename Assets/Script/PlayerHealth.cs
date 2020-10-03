@@ -1,30 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
+#pragma warning disable 649
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float Health;
     public TextMeshProUGUI HealthText;
 
-    private float StartInvulnerableTimer;
-    [SerializeField] private float InvulnerableTimer;
+    [SerializeField] private int health;
+    [SerializeField] private int maxHealth;
+    [SerializeField] private float invulnerableTimer;
 
+    private float StartInvulnerableTimer;
     private bool CanTakeDamage;
 
-    void Start()
+    #region Singleton
+
+    public static PlayerHealth Instance;
+
+    private void Awake() => Instance = this;
+
+    #endregion
+
+    private void Start()
     {
-        StartInvulnerableTimer = InvulnerableTimer;
-        HealthText.text = "" + Health;
+        StartInvulnerableTimer = invulnerableTimer;
+        HealthText.text = "" + health;
     }
 
-    void Update()
+    private void Update()
     {
-        if (InvulnerableTimer > 0)
+        if (invulnerableTimer > 0)
         {
-            InvulnerableTimer -= 1 * Time.deltaTime;
+            invulnerableTimer -= 1 * Time.deltaTime;
         }
         else
         {
@@ -36,10 +43,28 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.CompareTag("Enemy") && CanTakeDamage)
         {
-            InvulnerableTimer = StartInvulnerableTimer;
+            invulnerableTimer = StartInvulnerableTimer;
             CanTakeDamage = false;
-            Health--;
-            HealthText.text = "" + Health;
+            health--;
+            HealthText.text = "" + health;
+
+            if(health <= 0f)
+            {
+                Debug.LogError("Player died...");
+            }
+        }
+    }
+
+    public void IncreaseMaxHealth(int value) => maxHealth += value;
+
+    public void RestoreToMaxHealth() => health = maxHealth;
+
+    public void RestoreHealth(int value)
+    {
+        health += value;
+        if(health > maxHealth)
+        {
+            health = maxHealth;
         }
     }
 }

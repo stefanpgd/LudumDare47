@@ -1,22 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+#pragma warning disable 649
 
 public class DoorChecker : MonoBehaviour
 {
+    public Room room;
+    public GameObject m_Black;
+
     [SerializeField] private GameObject m_RoomCamera;
     [SerializeField] private CameraSwitch m_GameManager;
-
-    public GameObject m_Black;
+    [SerializeField] private List<EnemySpawner> enemySpawners;
 
     private bool m_CanUse;
     private GameObject m_NextRoom;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,13 +26,15 @@ public class DoorChecker : MonoBehaviour
         {
             collision.gameObject.transform.position = m_NextRoom.transform.GetChild(0).transform.position;
             collision.gameObject.transform.parent = m_NextRoom.transform.parent;
-            m_NextRoom.gameObject.GetComponent<DoorChecker>().m_Black.SetActive(false);
-
+            DoorChecker door = m_NextRoom.gameObject.GetComponent<DoorChecker>();
+            door.m_Black.SetActive(false);
+            door.room.EnableEnemySpawners();
+           
             m_RoomCamera.SetActive(false);
             m_Black.SetActive(true);
-            //m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera.SetActive(true);
+            room.DisableEnemySpawners();
 
-            m_GameManager.NextRoom(m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera);
+            m_GameManager.NextRoom(door.m_RoomCamera);
         }
     }
 
@@ -46,11 +44,5 @@ public class DoorChecker : MonoBehaviour
         {
             m_CanUse = false;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
