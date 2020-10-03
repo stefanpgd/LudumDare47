@@ -245,8 +245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28db2a4b0227959498c238d6ebf83424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TotalView: {fileID: 0}
-  m_TotalViewTime: 3
+  m_TotalView: {fileID: 2108109046}
+  m_TotalViewTime: 0.5
 --- !u!4 &7453819
 Transform:
   m_ObjectHideFlags: 0
