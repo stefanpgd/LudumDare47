@@ -9,6 +9,12 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private float MoveSpeed = 4.5f;
 
+    private void Start()
+    {
+        if (Target = null)
+            Target = GameObject.FindGameObjectWithTag("Player");
+    }
+
     void Update()
     {
         FollowTarget();
