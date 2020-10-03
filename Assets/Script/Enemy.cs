@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour
 {
     Rigidbody2D RigidBody;
 
+    public float EnemyHealth = 3.0f;
+
     [SerializeField] private Transform ShootPosition;
     [SerializeField] private Transform Target;
     [SerializeField] private GameObject Projectile;
@@ -28,6 +30,12 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        if(EnemyHealth <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("Destroy enemy");
+        }
+
         if (Vector2.Distance(transform.position, Target.position) > StoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, Target.position, MoveSpeed * Time.deltaTime);
