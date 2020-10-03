@@ -496,7 +496,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -701,7 +701,7 @@ RectTransform:
   m_Children:
   - {fileID: 204771288}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -935,7 +935,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902733106
 GameObject:
@@ -1066,6 +1066,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3810065008657921448, guid: 9c3b19ddf13aa8d4bb2a068c89926333,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 864251914}
     - target: {fileID: 4010012775032517240, guid: 9c3b19ddf13aa8d4bb2a068c89926333,
         type: 3}
       propertyPath: m_Name
@@ -1144,7 +1149,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 864251908}
+      objectReference: {fileID: 864251914}
     - target: {fileID: 2719136381460799928, guid: 5f1b5f8804684f24dbbf114957757ce1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1183,7 +1188,7 @@ PrefabInstance:
     - target: {fileID: 2719136381460799928, guid: 5f1b5f8804684f24dbbf114957757ce1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2719136381460799928, guid: 5f1b5f8804684f24dbbf114957757ce1,
         type: 3}
@@ -1213,6 +1218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2742220722648807584, guid: ddb374f04da539b49aaf5852ddb011ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2742220722648807586, guid: ddb374f04da539b49aaf5852ddb011ef,
         type: 3}
@@ -1252,7 +1262,7 @@ PrefabInstance:
     - target: {fileID: 2742220722648807586, guid: ddb374f04da539b49aaf5852ddb011ef,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2742220722648807586, guid: ddb374f04da539b49aaf5852ddb011ef,
         type: 3}
@@ -1271,12 +1281,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddb374f04da539b49aaf5852ddb011ef, type: 3}
---- !u!1 &3810065008657921443 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4010012775032517240, guid: 9c3b19ddf13aa8d4bb2a068c89926333,
-    type: 3}
-  m_PrefabInstance: {fileID: 236013122293598171}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6641507702906979492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1293,12 +1297,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 864251908}
-    - target: {fileID: 7796990249131055378, guid: 26a2424372b285244a49973562f45c5e,
-        type: 3}
-      propertyPath: Projectile
-      value: 
-      objectReference: {fileID: 3810065008657921443}
+      objectReference: {fileID: 864251914}
     - target: {fileID: 7796990249131055389, guid: 26a2424372b285244a49973562f45c5e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1427,7 +1426,13 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 864251908}
+      objectReference: {fileID: 864251914}
+    - target: {fileID: 3906086251359611403, guid: 5fc1fa08d00247a49ad7b35f6643b0f5,
+        type: 3}
+      propertyPath: Projectile
+      value: 
+      objectReference: {fileID: 4010012775032517240, guid: 9c3b19ddf13aa8d4bb2a068c89926333,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fc1fa08d00247a49ad7b35f6643b0f5, type: 3}
 --- !u!1001 &8892896469256132877

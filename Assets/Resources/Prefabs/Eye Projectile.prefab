@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6213871335672118401}
+  - component: {fileID: 3810065008657921448}
   - component: {fileID: 2293069751143951116}
   - component: {fileID: 2152520488464428482}
   - component: {fileID: 4961306232183794364}
@@ -33,6 +34,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3810065008657921448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010012775032517240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadc29b869388cf41ad17887c44b7c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProjectileSpeed: 4
+  player: {fileID: 0}
+  target: {x: 0, y: 0}
 --- !u!212 &2293069751143951116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103,7 +119,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4961306232183794364
 BoxCollider2D:
   m_ObjectHideFlags: 0

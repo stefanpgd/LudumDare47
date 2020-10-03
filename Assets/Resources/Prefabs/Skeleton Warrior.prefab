@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2841793686526533599}
   - component: {fileID: 1765740340}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Skeleton Warrior
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,8 +47,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d110ee16d527494abec24e1038f2464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyHealth: 3
+  ShootPosition: {fileID: 0}
   Target: {fileID: 0}
+  Projectile: {fileID: 4010012775032517240, guid: 9c3b19ddf13aa8d4bb2a068c89926333,
+    type: 3}
+  Ranged: 0
   MoveSpeed: 3.5
+  StoppingDistance: 2
+  ShootDelay: 2
 --- !u!50 &2719136381460799926
 Rigidbody2D:
   serializedVersion: 4
