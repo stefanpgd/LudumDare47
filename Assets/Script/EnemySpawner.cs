@@ -1,32 +1,50 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#pragma warning disable 649
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject Enemy;
-    [SerializeField] private float SpawnTimer;
-    [SerializeField] private float SpawnAmount;
-    private float StartSpawnTimer;
+    [SerializeField] private GameObject enemy;
+    [SerializeField] private Transform roomParent;
+    [SerializeField] private float spawnTimer;
+    [SerializeField] private int spawnAmount;
+
+    private float baseSpawnTimer;
+    private int baseSpawnAmount;
+    private bool isActive = false;
 
     private void Start()
     {
-        StartSpawnTimer = SpawnTimer;
+        baseSpawnTimer = spawnTimer;
+        baseSpawnAmount = spawnAmount;
     }
 
     private void Update()
     {
-        if (SpawnAmount > 0)
+        if(isActive)
         {
-            SpawnTimer -= Time.deltaTime;
-
-            if (SpawnTimer < 0)
+            if (spawnAmount > 0)
             {
-                SpawnTimer = StartSpawnTimer;
-                SpawnAmount--;
+                spawnTimer -= Time.deltaTime;
 
-                Instantiate(Enemy, transform.position, Quaternion.identity);
+                if (spawnTimer < 0)
+                {
+                    spawnTimer = baseSpawnTimer;
+                    spawnAmount--;
+
+                    Instantiate(enemy, transform.position, Quaternion.identity, roomParent.transform);
+                }
             }
         }
     }
+
+    public void EnableSpawning()
+    {
+        spawnTimer = baseSpawnTimer;
+        spawnAmount = baseSpawnAmount;
+        isActive = true;
+    }
+
+    public void DisableSpawning() => isActive = false;
 }

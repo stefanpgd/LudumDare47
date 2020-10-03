@@ -1,6 +1,6 @@
-﻿using System.Collections;
+﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine;
+#pragma warning disable 649
 
 public class Shop : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public class Shop : MonoBehaviour
     private void Start()
     {
         resourceManager = ResourceManager.Instance;
-
+        playerHealth = PlayerHealth.Instance;
     }
 
     private void Update()

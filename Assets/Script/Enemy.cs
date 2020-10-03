@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+#pragma warning disable 649
 
 public class Enemy : MonoBehaviour
 {
