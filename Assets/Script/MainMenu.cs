@@ -12,45 +12,46 @@ public class MainMenu : MonoBehaviour
     [SerializeField] float m_animationspeedmultiplier;
     [SerializeField] float m_maxreversespeed;
 
-    void OnEnable()
-    {
-        m_animationspeedmultiplier = 0f;
-    }
+    bool m_gamehasstarted;
 
     public void ReverseRooms()
     {
-        StartCoroutine(PlayAndWaitForAnim());
+        StartCoroutine("PlayAndWaitForAnim");
     }
 
     public IEnumerator PlayAndWaitForAnim()
     {
-        //Now, Wait until the current state is done playing
-        while ((m_levelanimator.GetCurrentAnimatorStateInfo(0).normalizedTime) % 1 < 0.99f)
+        if (m_gamehasstarted == false)
         {
-            if (m_animationspeedmultiplier > 0)
+            while ((m_levelanimator.GetCurrentAnimatorStateInfo(0).normalizedTime) % 1 < 0.99f)
             {
-                m_animationspeedmultiplier = m_animationspeedmultiplier - 0.2f;
-                m_levelanimator.SetFloat("RoomTurnSpeed", m_animationspeedmultiplier);
-                if (m_room1transf.position == Vector3.zero)
-                {
-                    m_levelanimator.SetFloat("RoomTurnSpeed", 0f);
-                }
-                yield return new WaitForSeconds(0.2f);
-            }
-            else
-            {
-                m_animationspeedmultiplier = m_animationspeedmultiplier - 0.05f;
-                m_levelanimator.SetFloat("RoomTurnSpeed", m_animationspeedmultiplier);
-                if (m_room1transf.position == Vector3.zero)
-                {
-                    m_levelanimator.SetFloat("RoomTurnSpeed", 0f);
-                    //Back to start?. Start game!
-                    StartGame();
-                }
-                Debug.Log("Time: " + m_levelanimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
-            }
+                Debug.Log("Wow");
 
-            yield return null;
+                if (m_animationspeedmultiplier > 0)
+                {
+                    m_animationspeedmultiplier = m_animationspeedmultiplier - 0.2f;
+                    m_levelanimator.SetFloat("RoomTurnSpeed", m_animationspeedmultiplier);
+                    if (m_room1transf.position == Vector3.zero)
+                    {
+                        m_levelanimator.SetFloat("RoomTurnSpeed", 0f);
+                    }
+                    yield return new WaitForSeconds(0.2f);
+                }
+                else
+                {
+                    m_animationspeedmultiplier = m_animationspeedmultiplier - 0.05f;
+                    m_levelanimator.SetFloat("RoomTurnSpeed", m_animationspeedmultiplier);
+                    if (m_room1transf.position == Vector3.zero)
+                    {
+                        m_levelanimator.SetFloat("RoomTurnSpeed", 0f);
+                        //Back to start?. Start game!
+                        StartGame();
+                    }
+                    Debug.Log("Time: " + m_levelanimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+                }
+
+                yield return null;
+            }
         }
     }
 
@@ -66,7 +67,10 @@ public class MainMenu : MonoBehaviour
             obj.SetActive(false);
         }
 
+        StopCoroutine("PlayAndWaitForAnim");
+        m_gamehasstarted = true;
         m_levelanimator.SetFloat("RoomTurnSpeed", 1f);
+        m_animationspeedmultiplier = 1f;
     }
 
     //IEnumerator ReverseTime()
