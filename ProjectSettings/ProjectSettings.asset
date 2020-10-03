@@ -658,10 +658,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 2d47e5e0-a1bd-4aca-a05a-538cbbcd8217
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: LudumDare47
+  organizationId: stefanpijnacker
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
