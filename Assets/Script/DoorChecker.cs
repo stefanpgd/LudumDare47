@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 #pragma warning disable 649
 
 public class DoorChecker : MonoBehaviour
@@ -7,7 +8,8 @@ public class DoorChecker : MonoBehaviour
 
     [SerializeField] private GameObject m_RoomCamera;
     [SerializeField] private CameraSwitch m_GameManager;
-    
+    [SerializeField] private List<EnemySpawner> enemySpawners;
+
     private bool m_CanUse;
     private GameObject m_NextRoom;
 
@@ -23,15 +25,21 @@ public class DoorChecker : MonoBehaviour
         {
             collision.gameObject.transform.position = m_NextRoom.transform.GetChild(0).transform.position;
             collision.gameObject.transform.parent = m_NextRoom.transform.parent;
-            m_NextRoom.gameObject.GetComponent<DoorChecker>().m_Black.SetActive(false);
-
+            DoorChecker door = m_NextRoom.gameObject.GetComponent<DoorChecker>();
+            door.m_Black.SetActive(false);
+            door.EnableEnemySpawners();
+           
             m_RoomCamera.SetActive(false);
             m_Black.SetActive(true);
-            //m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera.SetActive(true);
+            DisableEnemySpawners();
 
-            m_GameManager.NextRoom(m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera);
+            m_GameManager.NextRoom(door.m_RoomCamera);
         }
     }
+
+    public void EnableEnemySpawners() => enemySpawners.ForEach(enemySpawner => enemySpawner.EnableSpawning());
+
+    private void DisableEnemySpawners() => enemySpawners.ForEach(enemySpawner => enemySpawner.DisableSpawning());
 
     private void OnTriggerExit2D(Collider2D collision)
     {
