@@ -1,0 +1,2 @@
+"C:\Program Files\Gource\gource.exe" --user-image-dir avatars/ --highlight-users -1080x720 -e 0.01 --font-size 24 --camera-mode track --multi-sampling --seconds-per-day 15 --title "Ludum Dare 47" --background 222222 --hide filenames --hash-seed LudumDare47 --bloom-intensity 0.4 --auto-skip-seconds 0.01 --hide filenames --disable-auto-rotate --multi-sampling 
+pause 
