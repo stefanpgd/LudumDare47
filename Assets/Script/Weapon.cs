@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+#pragma warning disable 649
 
 public class Weapon : MonoBehaviour
 {
@@ -12,13 +11,11 @@ public class Weapon : MonoBehaviour
 
     private Vector3 target;
 
-    // Use this for initialization
     void Start()
     {
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));

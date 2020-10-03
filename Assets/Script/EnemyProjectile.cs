@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+#pragma warning disable 649
 
 public class EnemyProjectile : MonoBehaviour
 {
-    [SerializeField] private float ProjectileSpeed;
+    [SerializeField] private float projectileSpeed;
     [SerializeField] private Transform player;
     [SerializeField] private Vector2 target;
 
@@ -18,23 +17,23 @@ public class EnemyProjectile : MonoBehaviour
         }
     }
     
-    private void Update()
+    private void FixedUpdate()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, ProjectileSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, target, projectileSpeed * Time.deltaTime);
+    }
 
-        void OnTriggerEnter2D(Collider2D other)
+    private void DestroyProjectile()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            if(other.CompareTag("Player"))
-            {
-                DestroyProjectile();
-                Debug.Log("hithtithit");
+            DestroyProjectile();
+            Debug.Log("hithtithit");
 
-            }
-        }
-
-        void DestroyProjectile()
-        {
-            Destroy(gameObject);
         }
     }
 }

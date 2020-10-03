@@ -1,22 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+#pragma warning disable 649
 
 public class DoorChecker : MonoBehaviour
 {
-    [SerializeField] private GameObject m_RoomCamera;
-    [SerializeField] private CameraSwitch m_GameManager;
-
     public GameObject m_Black;
 
+    [SerializeField] private GameObject m_RoomCamera;
+    [SerializeField] private CameraSwitch m_GameManager;
+    
     private bool m_CanUse;
     private GameObject m_NextRoom;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -46,11 +39,5 @@ public class DoorChecker : MonoBehaviour
         {
             m_CanUse = false;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -11,8 +11,15 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float invulnerableTimer;
 
     private float StartInvulnerableTimer;
-
     private bool CanTakeDamage;
+
+    #region Singleton
+
+    public static PlayerHealth Instance;
+
+    private void Awake() => Instance = this;
+
+    #endregion
 
     private void Start()
     {
