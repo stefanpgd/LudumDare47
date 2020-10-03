@@ -7,6 +7,8 @@ public class DoorChecker : MonoBehaviour
     [SerializeField] private GameObject m_RoomCamera;
     [SerializeField] private CameraSwitch m_GameManager;
 
+    public GameObject m_Black;
+
     private bool m_CanUse;
     private GameObject m_NextRoom;
 
@@ -28,8 +30,10 @@ public class DoorChecker : MonoBehaviour
         {
             collision.gameObject.transform.position = m_NextRoom.transform.GetChild(0).transform.position;
             collision.gameObject.transform.parent = m_NextRoom.transform.parent;
+            m_NextRoom.gameObject.GetComponent<DoorChecker>().m_Black.SetActive(false);
 
             m_RoomCamera.SetActive(false);
+            m_Black.SetActive(true);
             //m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera.SetActive(true);
 
             m_GameManager.NextRoom(m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera);
