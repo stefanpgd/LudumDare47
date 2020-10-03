@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorChecker : MonoBehaviour
 {
     [SerializeField] private GameObject m_RoomCamera;
+    [SerializeField] private CameraSwitch m_GameManager;
 
     private bool m_CanUse;
     private GameObject m_NextRoom;
@@ -29,7 +30,9 @@ public class DoorChecker : MonoBehaviour
             collision.gameObject.transform.parent = m_NextRoom.transform.parent;
 
             m_RoomCamera.SetActive(false);
-            m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera.SetActive(true);
+            //m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera.SetActive(true);
+
+            m_GameManager.NextRoom(m_NextRoom.GetComponent<DoorChecker>().m_RoomCamera);
         }
     }
 
