@@ -22,18 +22,14 @@ public class EnemyProjectile : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target, projectileSpeed * Time.deltaTime);
     }
 
-    private void DestroyProjectile()
-    {
-        Destroy(gameObject);
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             DestroyProjectile();
             Debug.Log("hithtithit");
-
         }
     }
+
+    private void DestroyProjectile() => Destroy(gameObject);
 }
