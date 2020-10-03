@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DoorChecker : MonoBehaviour
 {
+    public Room room;
     public GameObject m_Black;
 
     [SerializeField] private GameObject m_RoomCamera;
@@ -27,19 +28,15 @@ public class DoorChecker : MonoBehaviour
             collision.gameObject.transform.parent = m_NextRoom.transform.parent;
             DoorChecker door = m_NextRoom.gameObject.GetComponent<DoorChecker>();
             door.m_Black.SetActive(false);
-            door.EnableEnemySpawners();
+            door.room.EnableEnemySpawners();
            
             m_RoomCamera.SetActive(false);
             m_Black.SetActive(true);
-            DisableEnemySpawners();
+            room.DisableEnemySpawners();
 
             m_GameManager.NextRoom(door.m_RoomCamera);
         }
     }
-
-    public void EnableEnemySpawners() => enemySpawners.ForEach(enemySpawner => enemySpawner.EnableSpawning());
-
-    private void DisableEnemySpawners() => enemySpawners.ForEach(enemySpawner => enemySpawner.DisableSpawning());
 
     private void OnTriggerExit2D(Collider2D collision)
     {
