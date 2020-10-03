@@ -54,4 +54,13 @@ public class Enemy : MonoBehaviour
             ShootDelay -= Time.deltaTime;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Arrow")
+        {
+            EnemyHealth--;
+            Destroy(collision.gameObject);
+        }
+    }
 }

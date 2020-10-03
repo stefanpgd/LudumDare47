@@ -874,6 +874,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eye Projectile
       objectReference: {fileID: 0}
+    - target: {fileID: 4961306232183794364, guid: 9c3b19ddf13aa8d4bb2a068c89926333,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6213871335672118401, guid: 9c3b19ddf13aa8d4bb2a068c89926333,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -951,7 +956,7 @@ PrefabInstance:
     - target: {fileID: 2719136381460799928, guid: 5f1b5f8804684f24dbbf114957757ce1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.8
+      value: -5.48
       objectReference: {fileID: 0}
     - target: {fileID: 2719136381460799928, guid: 5f1b5f8804684f24dbbf114957757ce1,
         type: 3}
@@ -1002,6 +1007,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719136381460799929, guid: 5f1b5f8804684f24dbbf114957757ce1,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719136381460799929, guid: 5f1b5f8804684f24dbbf114957757ce1,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.63214016
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719136381460799929, guid: 5f1b5f8804684f24dbbf114957757ce1,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2944188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719136381460799929, guid: 5f1b5f8804684f24dbbf114957757ce1,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.021374226
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719136381460799929, guid: 5f1b5f8804684f24dbbf114957757ce1,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.2735615
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f1b5f8804684f24dbbf114957757ce1, type: 3}
@@ -1095,6 +1125,31 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796990249131055388, guid: 26a2424372b285244a49973562f45c5e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796990249131055388, guid: 26a2424372b285244a49973562f45c5e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.36036956
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796990249131055388, guid: 26a2424372b285244a49973562f45c5e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.7179902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796990249131055388, guid: 26a2424372b285244a49973562f45c5e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.046602964
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796990249131055388, guid: 26a2424372b285244a49973562f45c5e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.679729
       objectReference: {fileID: 0}
     - target: {fileID: 7796990249131055389, guid: 26a2424372b285244a49973562f45c5e,
         type: 3}
@@ -1214,6 +1269,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3906086251359611397, guid: 5fc1fa08d00247a49ad7b35f6643b0f5,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3906086251359611397, guid: 5fc1fa08d00247a49ad7b35f6643b0f5,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -1.5124693
+      objectReference: {fileID: 0}
+    - target: {fileID: 3906086251359611397, guid: 5fc1fa08d00247a49ad7b35f6643b0f5,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.8777828
+      objectReference: {fileID: 0}
+    - target: {fileID: 3906086251359611397, guid: 5fc1fa08d00247a49ad7b35f6643b0f5,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.24087238
+      objectReference: {fileID: 0}
+    - target: {fileID: 3906086251359611397, guid: 5fc1fa08d00247a49ad7b35f6643b0f5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.8757677
       objectReference: {fileID: 0}
     - target: {fileID: 3906086251359611401, guid: 5fc1fa08d00247a49ad7b35f6643b0f5,
         type: 3}
