@@ -215,7 +215,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 56920307}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
+--- !u!1 &7453817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7453819}
+  - component: {fileID: 7453818}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7453818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28db2a4b0227959498c238d6ebf83424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TotalView: {fileID: 0}
+  m_TotalViewTime: 3
+--- !u!4 &7453819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453817}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &14695658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,50 +1799,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 596448566}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 34580884}
-  - component: {fileID: 34580883}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &34580883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34580882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28db2a4b0227959498c238d6ebf83424, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TotalView: {fileID: 2108109046}
-  m_TotalViewTime: 3
---- !u!4 &34580884
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34580882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &52035567
 GameObject:
@@ -4888,7 +4889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1049590997}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &165922309
 GameObject:
   m_ObjectHideFlags: 0
@@ -5252,7 +5253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1309751020}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &241092185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5347,7 +5348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1398571912}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &253755198
 GameObject:
   m_ObjectHideFlags: 0
@@ -6584,7 +6585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1384424471}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &376552895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6743,7 +6744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1779959470}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &451570104
 GameObject:
   m_ObjectHideFlags: 0
@@ -8347,7 +8348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1384424471}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &660962868
 GameObject:
   m_ObjectHideFlags: 0
@@ -8442,7 +8443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1132008470}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &698919260
 GameObject:
   m_ObjectHideFlags: 0
@@ -8537,7 +8538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1398571912}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &706554526
 GameObject:
   m_ObjectHideFlags: 0
@@ -8666,7 +8667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1309751020}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &731151596
 GameObject:
   m_ObjectHideFlags: 0
@@ -8891,7 +8892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1049590997}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &769284554
 GameObject:
   m_ObjectHideFlags: 0
@@ -11173,7 +11174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1779959470}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &870990455
 GameObject:
   m_ObjectHideFlags: 0
@@ -11902,7 +11903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1132008470}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &944892467
 GameObject:
   m_ObjectHideFlags: 0
@@ -13097,7 +13098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1386419151}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1112992097
 GameObject:
   m_ObjectHideFlags: 0
@@ -13608,7 +13609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1779959470}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1220320305
 GameObject:
   m_ObjectHideFlags: 0
@@ -17499,7 +17500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1398571912}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1453641201
 GameObject:
   m_ObjectHideFlags: 0
@@ -17654,7 +17655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1049590997}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1465383726
 GameObject:
   m_ObjectHideFlags: 0
@@ -17809,7 +17810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1386419151}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1548300053
 GameObject:
   m_ObjectHideFlags: 0
@@ -17964,7 +17965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1384424471}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1681031151
 GameObject:
   m_ObjectHideFlags: 0
@@ -18059,7 +18060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1132008470}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1681091584
 GameObject:
   m_ObjectHideFlags: 0
@@ -18214,7 +18215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 56920307}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1750256835
 GameObject:
   m_ObjectHideFlags: 0
@@ -18498,7 +18499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1384424471}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1807568662
 GameObject:
   m_ObjectHideFlags: 0
@@ -19265,7 +19266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1309751020}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1835829850
 GameObject:
   m_ObjectHideFlags: 0
@@ -19424,7 +19425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 56920307}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1861485103
 GameObject:
   m_ObjectHideFlags: 0
@@ -19519,7 +19520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1309751020}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1872008401
 GameObject:
   m_ObjectHideFlags: 0
@@ -19614,7 +19615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1386419151}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1879016155
 GameObject:
   m_ObjectHideFlags: 0
@@ -19709,7 +19710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1398571912}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1882405860
 GameObject:
   m_ObjectHideFlags: 0
@@ -19804,7 +19805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1779959470}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1887588243
 GameObject:
   m_ObjectHideFlags: 0
@@ -20517,7 +20518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1132008470}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1937988197
 GameObject:
   m_ObjectHideFlags: 0
@@ -20612,7 +20613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1386419151}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1948820988
 GameObject:
   m_ObjectHideFlags: 0
@@ -22162,7 +22163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 1049590997}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &1995121425
 GameObject:
   m_ObjectHideFlags: 3
@@ -22333,7 +22334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2108109047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22478,7 +22479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RoomCamera: {fileID: 56920307}
-  m_GameManager: {fileID: 34580883}
+  m_GameManager: {fileID: 7453818}
 --- !u!1 &2120326052
 GameObject:
   m_ObjectHideFlags: 0
