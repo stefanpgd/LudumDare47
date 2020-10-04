@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float ShootDelay = 0.4f;
     private float StartShootDelay;
     [SerializeField] private float bulletSpeed = 20f;
+    [SerializeField] private AudioSource shootSound;
 
     private Vector3 target;
 
@@ -47,5 +48,6 @@ public class Weapon : MonoBehaviour
         GameObject b = Instantiate(projectilePrefab, projectileStart.transform.position, Quaternion.identity, transform.parent);
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+        shootSound.Play();
     }
 }
