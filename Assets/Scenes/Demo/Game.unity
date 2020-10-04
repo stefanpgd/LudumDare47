@@ -121,38 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &556641241
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 556641242}
-  m_Layer: 0
-  m_Name: Spawners
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &556641242
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556641241}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1485771777}
-  - {fileID: 1025045061}
-  m_Father: {fileID: 5537763703383060519}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &603260776
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,55 +192,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1025045059
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1025045061}
-  - component: {fileID: 1025045060}
-  m_Layer: 0
-  m_Name: EnemySpawner (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1025045060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e692e627d2f6ac54e8a90499643f2117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doneSpawning: 0
-  enemy: {fileID: 3906086251359611401, guid: 5fc1fa08d00247a49ad7b35f6643b0f5, type: 3}
-  roomParent: {fileID: 5537763703383060519}
-  spawnTimer: 3
-  spawnAmount: 2
-  room: {fileID: 0}
---- !u!4 &1025045061
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045059}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.03, y: -1.55, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 556641242}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1120390376
 GameObject:
@@ -562,55 +481,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7379cc623d2668e4eb6d9e1996ae2fc2, type: 3}
---- !u!1 &1485771776
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1485771777}
-  - component: {fileID: 1485771778}
-  m_Layer: 0
-  m_Name: EnemySpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1485771777
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485771776}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.57, y: 4.03, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 556641242}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1485771778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485771776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e692e627d2f6ac54e8a90499643f2117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doneSpawning: 0
-  enemy: {fileID: 2719136381460799925, guid: 5f1b5f8804684f24dbbf114957757ce1, type: 3}
-  roomParent: {fileID: 5537763703383060519}
-  spawnTimer: 2.5
-  spawnAmount: 3
-  room: {fileID: 0}
 --- !u!1 &1838340713
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,21 +640,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5537763702688025953, guid: 6ad1da38943909444b5c59f86c8aec7c,
-        type: 3}
-      propertyPath: enemySpawners.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5537763702688025953, guid: 6ad1da38943909444b5c59f86c8aec7c,
-        type: 3}
-      propertyPath: enemySpawners.Array.data[0]
-      value: 
-      objectReference: {fileID: 1485771778}
-    - target: {fileID: 5537763702688025953, guid: 6ad1da38943909444b5c59f86c8aec7c,
-        type: 3}
-      propertyPath: enemySpawners.Array.data[1]
-      value: 
-      objectReference: {fileID: 1025045060}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ad1da38943909444b5c59f86c8aec7c, type: 3}
 --- !u!95 &5537763703383060518 stripped
