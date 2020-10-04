@@ -195,9 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098583865543}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098787908332}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098583865543}
 --- !u!61 &8431040097220013642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -351,9 +353,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097193008557}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098242960326}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097193008557}
 --- !u!61 &8431040097291140129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1841,7 +1845,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1692579495
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -4333,7 +4337,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1692579495
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -4389,9 +4393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097193008557}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098242960326}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097193008557}
 --- !u!61 &8431040097391675751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4673,9 +4679,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097746347926}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097839048094}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097746347926}
 --- !u!61 &8431040097490387538
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4769,9 +4777,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098873137374}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098493662444}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098873137374}
 --- !u!61 &8431040097528804477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4865,9 +4875,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097746347926}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097839048094}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097746347926}
 --- !u!61 &8431040097544785907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5115,9 +5127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097702921781}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097309218049}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097702921781}
 --- !u!61 &8431040097632605128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5241,9 +5255,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097837949849}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098934704440}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097837949849}
 --- !u!61 &8431040097638968219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5367,9 +5383,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098873137374}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098493662444}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098873137374}
 --- !u!61 &8431040097687274918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5574,9 +5592,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097702921781}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097309218049}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097702921781}
 --- !u!61 &8431040097735277161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5751,9 +5771,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097837949849}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098934704440}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097837949849}
 --- !u!61 &8431040097779854609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5948,9 +5970,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098628495957}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097790310891}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098628495957}
 --- !u!61 &8431040097823388776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6192,9 +6216,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097837949849}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098934704440}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097837949849}
 --- !u!61 &8431040097842293039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8510,9 +8536,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098873137374}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098493662444}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098873137374}
 --- !u!61 &8431040098013996526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8696,9 +8724,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097304216969}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098999987950}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097304216969}
 --- !u!61 &8431040098082903503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8822,9 +8852,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098873137374}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098493662444}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098873137374}
 --- !u!61 &8431040098169559827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8918,9 +8950,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097837949849}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098934704440}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097837949849}
 --- !u!61 &8431040098183680746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10475,7 +10509,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1692579495
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -10531,9 +10565,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097193008557}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098242960326}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097193008557}
 --- !u!61 &8431040098288801533
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10627,9 +10663,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097193008557}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098242960326}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097193008557}
 --- !u!61 &8431040098297582034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11740,9 +11778,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098583865543}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098787908332}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098583865543}
 --- !u!61 &8431040098449939651
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11930,9 +11970,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097304216969}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098999987950}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097304216969}
 --- !u!61 &8431040098483289124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13517,7 +13559,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1692579495
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -15078,7 +15120,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1692579495
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -15134,9 +15176,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098628495957}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097790310891}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098628495957}
 --- !u!61 &8431040098624680976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15230,9 +15274,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098628495957}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097790310891}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098628495957}
 --- !u!61 &8431040098625268285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15326,9 +15372,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098583865543}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098787908332}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098583865543}
 --- !u!61 &8431040098625986366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15503,9 +15551,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097702921781}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097309218049}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097702921781}
 --- !u!61 &8431040098643619342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16994,7 +17044,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1692579495
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -17050,9 +17100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097746347926}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097839048094}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097746347926}
 --- !u!61 &8431040098727488918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17146,9 +17198,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098628495957}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097790310891}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098628495957}
 --- !u!61 &8431040098736932800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19348,9 +19402,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097746347926}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097839048094}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097746347926}
 --- !u!61 &8431040099095598209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19474,9 +19530,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097304216969}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098999987950}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097304216969}
 --- !u!61 &8431040099174979439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19570,9 +19628,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097304216969}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098999987950}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097304216969}
 --- !u!61 &8431040099184234576
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20517,9 +20577,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040097702921781}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040097309218049}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040097702921781}
 --- !u!61 &8431040099210280556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22041,7 +22103,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1692579495
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -23525,7 +23587,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1692579495
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -23581,9 +23643,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  m_Black: {fileID: 8431040098583865543}
+  isInteractable: 1
   m_RoomCamera: {fileID: 8431040098787908332}
   m_GameManager: {fileID: 8431040099094398935}
-  m_Black: {fileID: 8431040098583865543}
 --- !u!61 &8431040099313272253
 BoxCollider2D:
   m_ObjectHideFlags: 0
