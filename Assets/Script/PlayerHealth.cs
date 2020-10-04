@@ -12,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
 
     [SerializeField] private List<GameObject> hearthSprites;
 
+    [SerializeField] private GameObject m_EndScreen, m_PlayerUI;
+
     private float StartInvulnerableTimer;
     private bool CanTakeDamage;
 
@@ -60,9 +62,17 @@ public class PlayerHealth : MonoBehaviour
             CanTakeDamage = false;
             health--;
 
-            if(health <= 0f)
+            if(health < 0f)
             {
                 Debug.LogError("Player died...");
+
+                m_EndScreen.SetActive(true);
+                m_PlayerUI.SetActive(false);
+
+                Cursor.visible = true;
+
+                GetComponent<PlayerMovement>().enabled = false;
+                GetComponent<Weapon>().enabled = false;
             }
         }
     }
