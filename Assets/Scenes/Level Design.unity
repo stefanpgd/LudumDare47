@@ -130,6 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7572417}
+  - component: {fileID: 7572418}
   m_Layer: 0
   m_Name: Room_8
   m_TagString: Untagged
@@ -156,6 +157,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7572418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &11788857
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 11788858}
+  - component: {fileID: 11788859}
   m_Layer: 0
   m_Name: Room_3
   m_TagString: Untagged
@@ -191,6 +206,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11788859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11788857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &14382977
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,11 +312,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 405361655}
   m_Black: {fileID: 1748604851}
   m_RoomCamera: {fileID: 1840136035}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &45163230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,11 +2125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 505642895}
   m_Black: {fileID: 391785339}
   m_RoomCamera: {fileID: 438417039}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &87782893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,11 +2222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2100754926}
   m_Black: {fileID: 1712670003}
   m_RoomCamera: {fileID: 1955634722}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &103785807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,11 +2400,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 405361655}
   m_Black: {fileID: 1748604851}
   m_RoomCamera: {fileID: 1840136035}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &111051142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,11 +2531,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2100754926}
   m_Black: {fileID: 1712670003}
   m_RoomCamera: {fileID: 1955634722}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &130588097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,11 +2628,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1595568755}
   m_Black: {fileID: 1166674558}
   m_RoomCamera: {fileID: 1483162636}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &132204463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2703,11 +2725,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2098034606}
   m_Black: {fileID: 502201037}
   m_RoomCamera: {fileID: 737902560}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &177114824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,11 +2822,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 852458498}
   m_Black: {fileID: 1258171676}
   m_RoomCamera: {fileID: 1267379902}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &178278812
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,11 +3655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 989297988}
   m_Black: {fileID: 2027811913}
   m_RoomCamera: {fileID: 1421059477}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &246227780
 GameObject:
   m_ObjectHideFlags: 3
@@ -3827,11 +3846,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1595568755}
   m_Black: {fileID: 1166674558}
   m_RoomCamera: {fileID: 1483162636}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &260467419
 GameObject:
   m_ObjectHideFlags: 3
@@ -5606,11 +5624,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2098034606}
   m_Black: {fileID: 502201037}
   m_RoomCamera: {fileID: 737902560}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &360582221
 GameObject:
   m_ObjectHideFlags: 0
@@ -7454,6 +7471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 405361654}
+  - component: {fileID: 405361655}
   m_Layer: 0
   m_Name: Room_4
   m_TagString: Untagged
@@ -7480,6 +7498,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &405361655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405361653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &407935631
 GameObject:
   m_ObjectHideFlags: 0
@@ -7519,6 +7550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412518499}
+  - component: {fileID: 412518500}
   m_Layer: 0
   m_Name: Room_11
   m_TagString: Untagged
@@ -7545,6 +7577,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &412518500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412518498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &419705830
 GameObject:
   m_ObjectHideFlags: 0
@@ -8668,11 +8713,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1819507386}
   m_Black: {fileID: 1723320029}
   m_RoomCamera: {fileID: 360582221}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &502201037
 GameObject:
   m_ObjectHideFlags: 0
@@ -8763,6 +8807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 505642894}
+  - component: {fileID: 505642895}
   m_Layer: 0
   m_Name: Room_10
   m_TagString: Untagged
@@ -8789,6 +8834,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &505642895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505642893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &516435913
 GameObject:
   m_ObjectHideFlags: 0
@@ -8882,11 +8940,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 989297988}
   m_Black: {fileID: 2027811913}
   m_RoomCamera: {fileID: 1421059477}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &529033433
 GameObject:
   m_ObjectHideFlags: 0
@@ -9205,11 +9262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 412518500}
   m_Black: {fileID: 2006146539}
   m_RoomCamera: {fileID: 1846100709}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &589580763
 GameObject:
   m_ObjectHideFlags: 0
@@ -9987,11 +10043,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1352743528}
   m_Black: {fileID: 741725422}
   m_RoomCamera: {fileID: 933763192}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &633964179
 GameObject:
   m_ObjectHideFlags: 0
@@ -10988,11 +11043,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2098034606}
   m_Black: {fileID: 502201037}
   m_RoomCamera: {fileID: 737902560}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &674618939
 GameObject:
   m_ObjectHideFlags: 0
@@ -11086,11 +11140,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 7572418}
   m_Black: {fileID: 103785807}
   m_RoomCamera: {fileID: 1944166837}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &696535996
 GameObject:
   m_ObjectHideFlags: 0
@@ -11295,11 +11348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1352743528}
   m_Black: {fileID: 741725422}
   m_RoomCamera: {fileID: 933763192}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &727496933
 GameObject:
   m_ObjectHideFlags: 0
@@ -13654,11 +13706,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 412518500}
   m_Black: {fileID: 2006146539}
   m_RoomCamera: {fileID: 1846100709}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &796728385
 GameObject:
   m_ObjectHideFlags: 0
@@ -15003,11 +15054,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 11788859}
   m_Black: {fileID: 696535996}
   m_RoomCamera: {fileID: 896143553}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &820724944
 GameObject:
   m_ObjectHideFlags: 0
@@ -15101,11 +15151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2098034606}
   m_Black: {fileID: 502201037}
   m_RoomCamera: {fileID: 737902560}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &851277754
 GameObject:
   m_ObjectHideFlags: 0
@@ -15199,11 +15248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 405361655}
   m_Black: {fileID: 1748604851}
   m_RoomCamera: {fileID: 1840136035}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &852458496
 GameObject:
   m_ObjectHideFlags: 0
@@ -15213,6 +15261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852458497}
+  - component: {fileID: 852458498}
   m_Layer: 0
   m_Name: Room_2
   m_TagString: Untagged
@@ -15239,6 +15288,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &852458498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852458496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &857117610
 GameObject:
   m_ObjectHideFlags: 0
@@ -15429,11 +15491,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1819507386}
   m_Black: {fileID: 1723320029}
   m_RoomCamera: {fileID: 360582221}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &903688530
 GameObject:
   m_ObjectHideFlags: 0
@@ -15628,11 +15689,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 412518500}
   m_Black: {fileID: 2006146539}
   m_RoomCamera: {fileID: 1846100709}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &943076036
 GameObject:
   m_ObjectHideFlags: 0
@@ -15756,11 +15816,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1352743528}
   m_Black: {fileID: 741725422}
   m_RoomCamera: {fileID: 933763192}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &984982290
 GameObject:
   m_ObjectHideFlags: 0
@@ -16454,6 +16513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 989297987}
+  - component: {fileID: 989297988}
   m_Layer: 0
   m_Name: Room_1
   m_TagString: Untagged
@@ -16481,6 +16541,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &989297988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989297986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &1002343642
 GameObject:
   m_ObjectHideFlags: 0
@@ -16574,11 +16647,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 852458498}
   m_Black: {fileID: 1258171676}
   m_RoomCamera: {fileID: 1267379902}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1029444773
 GameObject:
   m_ObjectHideFlags: 0
@@ -16672,11 +16744,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2100754926}
   m_Black: {fileID: 1712670003}
   m_RoomCamera: {fileID: 1955634722}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1042598750
 GameObject:
   m_ObjectHideFlags: 3
@@ -16864,11 +16935,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 505642895}
   m_Black: {fileID: 391785339}
   m_RoomCamera: {fileID: 438417039}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1094731192
 GameObject:
   m_ObjectHideFlags: 0
@@ -19198,11 +19268,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 11788859}
   m_Black: {fileID: 696535996}
   m_RoomCamera: {fileID: 896143553}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1277108858
 GameObject:
   m_ObjectHideFlags: 0
@@ -19450,11 +19519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 505642895}
   m_Black: {fileID: 391785339}
   m_RoomCamera: {fileID: 438417039}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1341315453
 GameObject:
   m_ObjectHideFlags: 0
@@ -19548,11 +19616,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 405361655}
   m_Black: {fileID: 1748604851}
   m_RoomCamera: {fileID: 1840136035}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1341644139
 GameObject:
   m_ObjectHideFlags: 0
@@ -19646,11 +19713,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1819507386}
   m_Black: {fileID: 1723320029}
   m_RoomCamera: {fileID: 360582221}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1346348283
 GameObject:
   m_ObjectHideFlags: 0
@@ -19696,6 +19762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1352743527}
+  - component: {fileID: 1352743528}
   m_Layer: 0
   m_Name: Room_7
   m_TagString: Untagged
@@ -19722,6 +19789,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1352743528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352743526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &1353989451
 GameObject:
   m_ObjectHideFlags: 0
@@ -19815,11 +19895,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 852458498}
   m_Black: {fileID: 1258171676}
   m_RoomCamera: {fileID: 1267379902}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1361399156
 GameObject:
   m_ObjectHideFlags: 0
@@ -19913,11 +19992,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1819507386}
   m_Black: {fileID: 1723320029}
   m_RoomCamera: {fileID: 360582221}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1400210424
 GameObject:
   m_ObjectHideFlags: 0
@@ -20985,11 +21063,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 11788859}
   m_Black: {fileID: 696535996}
   m_RoomCamera: {fileID: 896143553}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1483162636
 GameObject:
   m_ObjectHideFlags: 0
@@ -21274,11 +21351,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 7572418}
   m_Black: {fileID: 103785807}
   m_RoomCamera: {fileID: 1944166837}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1573638068
 GameObject:
   m_ObjectHideFlags: 0
@@ -21372,11 +21448,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 11788859}
   m_Black: {fileID: 696535996}
   m_RoomCamera: {fileID: 896143553}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1581932115
 GameObject:
   m_ObjectHideFlags: 0
@@ -21470,11 +21545,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 7572418}
   m_Black: {fileID: 103785807}
   m_RoomCamera: {fileID: 1944166837}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1595568753
 GameObject:
   m_ObjectHideFlags: 0
@@ -21484,6 +21558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1595568754}
+  - component: {fileID: 1595568755}
   m_Layer: 0
   m_Name: Room_12
   m_TagString: Untagged
@@ -21510,6 +21585,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1595568755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595568753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &1603904836
 GameObject:
   m_ObjectHideFlags: 0
@@ -21663,11 +21751,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 989297988}
   m_Black: {fileID: 2027811913}
   m_RoomCamera: {fileID: 1421059477}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1677006607
 GameObject:
   m_ObjectHideFlags: 3
@@ -22256,11 +22343,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1352743528}
   m_Black: {fileID: 741725422}
   m_RoomCamera: {fileID: 933763192}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1763562337
 GameObject:
   m_ObjectHideFlags: 3
@@ -22448,11 +22534,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 852458498}
   m_Black: {fileID: 1258171676}
   m_RoomCamera: {fileID: 1267379902}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1778948552
 GameObject:
   m_ObjectHideFlags: 0
@@ -22546,11 +22631,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 412518500}
   m_Black: {fileID: 2006146539}
   m_RoomCamera: {fileID: 1846100709}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &1798128994
 GameObject:
   m_ObjectHideFlags: 3
@@ -22748,6 +22832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1819507385}
+  - component: {fileID: 1819507386}
   m_Layer: 0
   m_Name: Room_5
   m_TagString: Untagged
@@ -22774,6 +22859,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1819507386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819507384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &1827056653
 GameObject:
   m_ObjectHideFlags: 0
@@ -26907,11 +27005,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 989297988}
   m_Black: {fileID: 2027811913}
   m_RoomCamera: {fileID: 1421059477}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &2006146539
 GameObject:
   m_ObjectHideFlags: 0
@@ -27086,11 +27183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1595568755}
   m_Black: {fileID: 1166674558}
   m_RoomCamera: {fileID: 1483162636}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &2013685321
 GameObject:
   m_ObjectHideFlags: 0
@@ -27184,11 +27280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 1595568755}
   m_Black: {fileID: 1166674558}
   m_RoomCamera: {fileID: 1483162636}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &2019554782
 GameObject:
   m_ObjectHideFlags: 0
@@ -27312,11 +27407,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2100754926}
   m_Black: {fileID: 1712670003}
   m_RoomCamera: {fileID: 1955634722}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &2027811913
 GameObject:
   m_ObjectHideFlags: 0
@@ -27491,11 +27585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 505642895}
   m_Black: {fileID: 391785339}
   m_RoomCamera: {fileID: 438417039}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &2051258498
 GameObject:
   m_ObjectHideFlags: 0
@@ -27589,11 +27682,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc45994efc538cc49bcfd9eee8171b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 7572418}
   m_Black: {fileID: 103785807}
   m_RoomCamera: {fileID: 1944166837}
   m_GameManager: {fileID: 1888436880}
-  enemySpawners: []
 --- !u!1 &2053447273
 GameObject:
   m_ObjectHideFlags: 0
@@ -27851,6 +27943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2098034605}
+  - component: {fileID: 2098034606}
   m_Layer: 0
   m_Name: Room_9
   m_TagString: Untagged
@@ -27877,6 +27970,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2098034606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098034604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &2100754924
 GameObject:
   m_ObjectHideFlags: 0
@@ -27886,6 +27992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2100754925}
+  - component: {fileID: 2100754926}
   m_Layer: 0
   m_Name: Room_6
   m_TagString: Untagged
@@ -27912,6 +28019,19 @@ Transform:
   m_Father: {fileID: 1875904919}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2100754926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100754924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94247fd2b2704e941abcc2aa87a43c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!1 &2113436230
 GameObject:
   m_ObjectHideFlags: 0
