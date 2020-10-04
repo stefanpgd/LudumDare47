@@ -49,7 +49,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,6 +125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e692e627d2f6ac54e8a90499643f2117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 2719136381460799925, guid: 5f1b5f8804684f24dbbf114957757ce1, type: 3}
-  SpawnTimer: 4
-  SpawnAmount: 3
+  doneSpawning: 0
+  enemy: {fileID: 2719136381460799925, guid: 5f1b5f8804684f24dbbf114957757ce1, type: 3}
+  roomParent: {fileID: 0}
+  spawnTimer: 2
+  spawnAmount: 3
+  room: {fileID: 0}
