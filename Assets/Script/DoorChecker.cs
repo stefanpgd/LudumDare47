@@ -16,14 +16,14 @@ public class DoorChecker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(isInteractable)
+        if (collision.gameObject.CompareTag("Door"))
         {
-            if (collision.gameObject.CompareTag("Door"))
-            {
-                m_CanUse = true;
-                m_NextRoom = collision.gameObject;
-            }
+            m_CanUse = true;
+            m_NextRoom = collision.gameObject;
+        }
 
+        if (isInteractable)
+        { 
             if (collision.gameObject.CompareTag("Player") && m_CanUse)
             {
                 collision.gameObject.transform.position = m_NextRoom.transform.GetChild(0).transform.position;
