@@ -309,7 +309,7 @@ Transform:
   m_GameObject: {fileID: 8892896468979230985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
   - {fileID: 1221631010}
   - {fileID: 9068466373151166485}
@@ -346,6 +346,8 @@ MonoBehaviour:
   maxHealth: 5
   invulnerableTimer: 1
   hearthSprites: []
+  m_EndScreen: {fileID: 0}
+  m_PlayerUI: {fileID: 0}
 --- !u!114 &1979972941858109571
 MonoBehaviour:
   m_ObjectHideFlags: 0

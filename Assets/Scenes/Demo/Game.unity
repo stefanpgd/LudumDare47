@@ -3990,6 +3990,21 @@ PrefabInstance:
       propertyPath: health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4013829353357605006, guid: 6ad1da38943909444b5c59f86c8aec7c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013829353357605006, guid: 6ad1da38943909444b5c59f86c8aec7c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013829353357605006, guid: 6ad1da38943909444b5c59f86c8aec7c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4190858893265097755, guid: 6ad1da38943909444b5c59f86c8aec7c,
         type: 3}
       propertyPath: m_TileAssetArray.Array.data[21].m_Data
