@@ -9,7 +9,6 @@ public class DoorChecker : MonoBehaviour
 
     [SerializeField] private GameObject m_RoomCamera;
     [SerializeField] private CameraSwitch m_GameManager;
-    [SerializeField] private List<EnemySpawner> enemySpawners;
 
     private bool m_CanUse;
     private GameObject m_NextRoom;
