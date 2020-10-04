@@ -10,6 +10,7 @@ public class DoorChecker : MonoBehaviour
 
     [SerializeField] private GameObject m_RoomCamera;
     [SerializeField] private CameraSwitch m_GameManager;
+    [SerializeField] private PlayerMovement m_Player;
 
     private bool m_CanUse;
     private GameObject m_NextRoom;
@@ -35,6 +36,9 @@ public class DoorChecker : MonoBehaviour
                 m_RoomCamera.SetActive(false);
                 m_Black.SetActive(true);
                 room.DisableRoom();
+
+                m_Player.enabled = false;
+                m_Player.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
                 m_GameManager.NextRoom(door.m_RoomCamera);
             }

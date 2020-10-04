@@ -49,14 +49,17 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         float distanceX = transform.position.x - Target.position.x;
-        
-        if(distanceX > 0)
+
+        if (!IsAttacking)
         {
-            transform.localScale = new Vector3(-0.3f, 0.3f, 0.3f);
-        }
-        else
-        {
-            transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+            if (distanceX > 0)
+            {
+                transform.localScale = new Vector3(-0.3f, 0.3f, 0.3f);
+            }
+            else
+            {
+                transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+            }
         }
 
         if(enemyType == EnemyType.Slime)
@@ -103,27 +106,6 @@ public class Enemy : MonoBehaviour
             {
                 IsAttacking = true;
                 anim.SetBool("IsAttacking", true);
-
-                if (AttackAnimationDuration < 0)
-                {
-                    Vector3 difference = Target.position - ShootPosition.position;
-                    float distance = difference.magnitude;
-                    Vector2 direction = difference / distance;
-                    direction.Normalize();
-
-                    float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-
-                    GameObject b = Instantiate(Projectile, ShootPosition.position, Quaternion.identity, transform.parent);
-                    b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
-                    b.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
-
-                    if(enemyType == EnemyType.FlyingEye)
-                    {
-                        audio.Play();
-                    }
-
-                    AttackDelay = StartAttackDelay;
-                }
             }
             else if (!Ranged && AttackDelay < 0)
             {
@@ -161,5 +143,26 @@ public class Enemy : MonoBehaviour
                 audio.Play();
             }
         }
+    }
+
+    public void EyeSpit()
+    {
+        Vector3 difference = Target.position - ShootPosition.position;
+        float distance = difference.magnitude;
+        Vector2 direction = difference / distance;
+        direction.Normalize();
+
+        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+
+        GameObject b = Instantiate(Projectile, ShootPosition.position, Quaternion.identity, transform.parent);
+        b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        b.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
+
+        if (enemyType == EnemyType.FlyingEye)
+        {
+            audio.Play();
+        }
+
+        AttackDelay = StartAttackDelay;
     }
 }

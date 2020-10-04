@@ -7,6 +7,7 @@ public class CameraSwitch : MonoBehaviour
 {
     [SerializeField] private GameObject m_TotalView;
     [SerializeField] private float m_TotalViewTime;
+    [SerializeField] private PlayerMovement m_Player;
 
     private float m_Delay;
     private GameObject m_RoomView;
@@ -39,6 +40,8 @@ public class CameraSwitch : MonoBehaviour
             {
                 m_TotalView.SetActive(false);
                 m_RoomView.SetActive(true);
+
+                m_Player.enabled = true;
 
                 m_RoomView = null;
             }

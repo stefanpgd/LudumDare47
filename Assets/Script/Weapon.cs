@@ -12,13 +12,22 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float bulletSpeed = 20f;
     [SerializeField] private AudioSource shootSound;
 
+    [SerializeField] private SpriteRenderer m_CrossbowSprite;
+
     private Vector3 target;
+
+    private SpriteRenderer m_Sprite;
+    private Vector3 m_MousePos;
+    private Animator m_Animator;
 
     void Start()
     {
         Cursor.visible = false;
 
         StartShootDelay = ShootDelay;
+
+        m_Sprite = GetComponent<SpriteRenderer>();
+        m_Animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -40,6 +49,32 @@ public class Weapon : MonoBehaviour
             fireBullet(direction, rotationZ);
 
             ShootDelay = StartShootDelay;
+        }
+
+        m_MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (m_MousePos.x > transform.position.x)
+        {
+            m_Sprite.flipX = false;
+            m_CrossbowSprite.flipY = false;
+        }
+
+        else
+        {
+            m_Sprite.flipX = true;
+            m_CrossbowSprite.flipY = true;
+        }
+
+        if (m_MousePos.y > transform.position.y)
+        {
+            m_Animator.SetBool("Front", false);
+            m_Sprite.sortingOrder = 1;
+        }
+
+        else
+        {
+            m_Animator.SetBool("Front", true);
+            m_Sprite.sortingOrder = -1;
         }
     }
 
