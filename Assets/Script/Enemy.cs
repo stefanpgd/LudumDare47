@@ -73,9 +73,9 @@ public class Enemy : MonoBehaviour
         if(EnemyHealth <= 0)
         {
             this.gameObject.SetActive(false);
-            int coins = Random.Range(-1, 4);
+            int coins = Random.Range(0, 4);
             resourceManager.AddResource(ResourceType.Gold, coins);
-            resourceManager.AddResource(ResourceType.Kills, coins);
+            resourceManager.AddResource(ResourceType.Kills, 1);
         }
 
         AttackDelay -= Time.deltaTime;
