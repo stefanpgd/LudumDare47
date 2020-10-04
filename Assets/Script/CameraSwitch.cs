@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#pragma warning disable 649
 
 public class CameraSwitch : MonoBehaviour
 {
@@ -11,10 +12,10 @@ public class CameraSwitch : MonoBehaviour
     private GameObject m_RoomView;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        m_TotalView.SetActive(false);
-    }
+    //void Start()
+    //{
+    //    m_TotalView.SetActive(false);
+    //}
 
     public void NextRoom(GameObject camera)
     {
