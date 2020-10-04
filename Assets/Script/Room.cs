@@ -9,10 +9,16 @@ public class Room : MonoBehaviour
     [SerializeField] private List<DoorChecker> doors;
 
     private List<Enemy> activeEnemies = new List<Enemy>();
+    private ResourceManager resourceManager;
+    private ResourceManager ResourceManager => resourceManager ?? ResourceManager.Instance;
     private bool isActive = false;
     private bool hasUserCompletedRoom;
 
-    private void Start() => enemySpawners.ForEach(spawner => spawner.room = this);
+    private void Start()
+    {
+        enemySpawners.ForEach(spawner => spawner.room = this);
+        resourceManager = ResourceManager.Instance;
+    }
 
     private void Update()
     {
@@ -29,6 +35,7 @@ public class Room : MonoBehaviour
 
     public void EnableRoom()
     {
+        ResourceManager.AddResource(ResourceType.RoomsCompleted, 1);
         EnableEnemySpawners();
         doors.ForEach(door => door.isInteractable = false);
         isActive = true;
