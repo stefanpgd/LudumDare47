@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 8892896468979230987}
   - component: {fileID: 8892896468979230980}
   - component: {fileID: 1979972941858109571}
+  - component: {fileID: 722802449326065948}
   - component: {fileID: 8892896468979230984}
   - component: {fileID: 8892896468979230981}
   - component: {fileID: 864251915}
@@ -307,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 8892896468979230985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 1221631010}
   - {fileID: 9068466373151166485}
@@ -340,9 +341,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acb2f1e43298b347bad6aa606df0c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
-  HealthText: {fileID: 0}
-  InvulnerableTimer: 2
+  health: 4
+  maxHealth: 5
+  invulnerableTimer: 1
+  hearthSprites: []
 --- !u!114 &1979972941858109571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,7 +362,19 @@ MonoBehaviour:
   projectilePrefab: {fileID: 790665636442134543, guid: b8f845cdec96aac43a057086879f10bb,
     type: 3}
   projectileStart: {fileID: 6948793262626141266}
-  bulletSpeed: 20
+  bulletSpeed: 40
+--- !u!114 &722802449326065948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8892896468979230985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7749f248cfda942804aa87f6a1a8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &8892896468979230984
 Rigidbody2D:
   serializedVersion: 4
@@ -395,7 +409,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.053033203, y: -0.63964224}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -406,7 +420,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.4}
+  m_Size: {x: 1.3148091, y: 2.7482686}
   m_EdgeRadius: 0
 --- !u!212 &864251915
 SpriteRenderer:
