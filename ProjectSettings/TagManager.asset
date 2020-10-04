@@ -8,6 +8,10 @@ TagManager:
   - Door
   - Arrow
   - Wall
+  - TopRight
+  - TopLeft
+  - BottomRight
+  - BottomLeft
   layers:
   - Default
   - TransparentFX
