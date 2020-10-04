@@ -5,32 +5,38 @@ using System.Collections.Generic;
 public class Shop : MonoBehaviour
 {
     private ResourceManager resourceManager;
+    private ResourceManager ResourceManager => resourceManager ?? ResourceManager.Instance;
+
     private PlayerHealth playerHealth;
+    private PlayerHealth PlayerHealth => playerHealth ?? PlayerHealth.Instance;
+
     private bool IsPlayerNear;
     [SerializeField] private List<Animator> animators;
 
-    private void Start()
-    {
-        resourceManager = ResourceManager.Instance;
-        playerHealth = PlayerHealth.Instance;
-    }
+    [SerializeField] private int healthPotionCost;
+    [SerializeField] private int extraHearthCost;
 
     private void Update()
     {
         if(IsPlayerNear)
         {
-            // Health potion??
-            if(Input.GetKeyDown(KeyCode.Alpha1))
+            if(ResourceManager.GetResourceValue() >= healthPotionCost)
             {
-                // playerHealth.RestoreHealth();
-                // resourceManager.RemoveResource(ResourceType.Gold, 20f);
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    PlayerHealth.RestoreToMaxHealth();
+                    ResourceManager.RemoveResource(ResourceType.Gold, healthPotionCost);
+                }
             }
 
-            // Bonus Hearth??
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            if (ResourceManager.GetResourceValue() >= extraHearthCost)
             {
-                // playerHealth.AddHearth();
-                // resourceManager.RemoveResource(ResourceType.Gold, 50f);
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    PlayerHealth.IncreaseMaxHealth(1);
+                    PlayerHealth.RestoreToMaxHealth();
+                    ResourceManager.RemoveResource(ResourceType.Gold, extraHearthCost); 
+                }
             }
 
             // Strong Arrows??

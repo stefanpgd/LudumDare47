@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
     {
         for(int i = 0; i < hearthSprites.Count; i++)
         {
-            if(i <= health)
+            if(i < health)
             {
                 hearthSprites[i].gameObject.SetActive(true);
             }
