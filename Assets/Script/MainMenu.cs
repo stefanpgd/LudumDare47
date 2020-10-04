@@ -25,8 +25,6 @@ public class MainMenu : MonoBehaviour
         {
             while ((m_levelanimator.GetCurrentAnimatorStateInfo(0).normalizedTime) % 1 < 0.99f)
             {
-                Debug.Log("Wow");
-
                 if (m_animationspeedmultiplier > 0)
                 {
                     m_animationspeedmultiplier = m_animationspeedmultiplier - 0.2f;

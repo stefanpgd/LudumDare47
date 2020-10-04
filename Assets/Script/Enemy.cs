@@ -73,10 +73,9 @@ public class Enemy : MonoBehaviour
         if(EnemyHealth <= 0)
         {
             this.gameObject.SetActive(false);
-            Debug.Log("Destroyed enemy: " + gameObject.name);
-            int coins = Random.Range(-1, 4);
+            int coins = Random.Range(0, 4);
             resourceManager.AddResource(ResourceType.Gold, coins);
-            resourceManager.AddResource(ResourceType.Kills, coins);
+            resourceManager.AddResource(ResourceType.Kills, 1);
         }
 
         AttackDelay -= Time.deltaTime;
@@ -140,12 +139,12 @@ public class Enemy : MonoBehaviour
 
             if (AttackAnimationDuration < 0)
             {
-                Debug.Log("anim attack false");
-
                 anim.SetBool("IsAttacking", false);
                 WasInRange = false;
                 IsAttacking = false;
-                AttackTrigger.SetActive(false);
+
+                if(!Ranged)
+                    AttackTrigger.SetActive(false);
             }
         }
     }
