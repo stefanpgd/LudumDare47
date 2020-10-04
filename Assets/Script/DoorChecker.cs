@@ -43,12 +43,9 @@ public class DoorChecker : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (isInteractable)
+        if (collision.gameObject.CompareTag("Door"))
         {
-            if (collision.gameObject.CompareTag("Door"))
-            {
-                m_CanUse = false;
-            }
+            m_CanUse = false;
         }
     }
 }
