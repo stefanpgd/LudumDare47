@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
     {
         if(EnemyHealth <= 0)
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
             Debug.Log("Destroy enemy");
         }
 
