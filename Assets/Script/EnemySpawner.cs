@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    [HideInInspector] public bool doneSpawning = false;
+
     [SerializeField] private GameObject enemy;
     [SerializeField] private Transform roomParent;
     [SerializeField] private float spawnTimer;
     [SerializeField] private int spawnAmount;
+    [HideInInspector] public Room room;
 
     private float baseSpawnTimer;
     private int baseSpawnAmount;
@@ -26,15 +29,20 @@ public class EnemySpawner : MonoBehaviour
         {
             if (spawnAmount > 0)
             {
-                spawnTimer -= Time.deltaTime;
+                spawnTimer -= 1f * Time.deltaTime;
 
-                if (spawnTimer < 0)
+                if (spawnTimer <= 0)
                 {
                     spawnTimer = baseSpawnTimer;
                     spawnAmount--;
 
-                    Instantiate(enemy, transform.position, Quaternion.identity, roomParent.transform);
+                    GameObject enem = Instantiate(enemy, transform.position, Quaternion.identity, roomParent.transform);
+                    room.AddEnemy(enem.GetComponent<Enemy>());
                 }
+            }
+            else
+            {
+                doneSpawning = true;
             }
         }
     }
@@ -44,6 +52,7 @@ public class EnemySpawner : MonoBehaviour
         spawnTimer = baseSpawnTimer;
         spawnAmount = baseSpawnAmount;
         isActive = true;
+        doneSpawning = false;
     }
 
     public void DisableSpawning() => isActive = false;
