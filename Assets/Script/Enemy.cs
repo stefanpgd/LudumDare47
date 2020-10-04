@@ -4,26 +4,38 @@
 public class Enemy : MonoBehaviour
 {
     Rigidbody2D RigidBody;
+    Animator anim;
 
     public float EnemyHealth = 3.0f;
 
     [SerializeField] private Transform ShootPosition;
     [SerializeField] private Transform Target;
     [SerializeField] private GameObject Projectile;
+    [SerializeField] private GameObject AttackTrigger;
     [SerializeField] private bool Ranged;
 
+    private bool IsAttacking;
+    private bool WasInRange;
+    
+    [SerializeField] private float AttackAnimationDuration = 1.0f;
     [SerializeField] private float MoveSpeed = 4.5f;
     [SerializeField] private float StoppingDistance = 2.0f;
-    [SerializeField] private float ShootDelay = 2.0f;
+    [SerializeField] private float AttackDelay = 0.5f;
+    [SerializeField] private float AttackHitboxAppear = 0.4f;
 
-    private float StartShootDelay;
+    private float StartAttackAnimationDuration;
+    private float StartAttackDelay;
 
     private void Start()
     {
         if (Target == null)
             Target = GameObject.FindGameObjectWithTag("Player").transform;
 
-        StartShootDelay = ShootDelay;
+        if (anim == null)
+            anim = GetComponent<Animator>();
+
+        StartAttackAnimationDuration = AttackAnimationDuration;
+        StartAttackDelay = AttackDelay;
     }
 
     private void Update()
@@ -34,23 +46,59 @@ public class Enemy : MonoBehaviour
             Debug.Log("Destroy enemy");
         }
 
-        if (Vector2.Distance(transform.position, Target.position) > StoppingDistance)
+        AttackDelay -= Time.deltaTime;
+
+        if (Vector2.Distance(transform.position, Target.position) > StoppingDistance && IsAttacking == false)
         {
             transform.position = Vector2.MoveTowards(transform.position, Target.position, MoveSpeed * Time.deltaTime);
-        } 
-        else if (Vector2.Distance(transform.position, Target.position) < StoppingDistance)
+
+        }
+        else if (Vector2.Distance(transform.position, Target.position) < StoppingDistance && WasInRange == false)
         {
             transform.position = this.transform.position;
+            AttackAnimationDuration = StartAttackAnimationDuration;
+            WasInRange = true;
         }
 
-        if (ShootDelay <= 0 && (Ranged))
+        if (WasInRange && AttackAnimationDuration >= 0)
         {
-            Instantiate(Projectile, ShootPosition.position, transform.rotation);
-            ShootDelay = StartShootDelay;
-        }
-        else
-        {
-            ShootDelay -= Time.deltaTime;
+            if(IsAttacking)
+            {
+                AttackAnimationDuration -= Time.deltaTime;
+            }
+
+            if (Ranged && AttackDelay < 0)
+            {
+                IsAttacking = true;
+                anim.SetBool("IsAttacking", true);
+
+                if (AttackAnimationDuration < 0)
+                {
+                    Instantiate(Projectile, ShootPosition.position, transform.rotation);
+                    AttackDelay = StartAttackDelay;
+                }
+            }
+            else if (!Ranged && AttackDelay < 0)
+            {
+                IsAttacking = true;
+                anim.SetBool("IsAttacking", true);
+                AttackDelay = StartAttackDelay;
+
+                if (AttackAnimationDuration < AttackHitboxAppear)
+                {
+                    AttackTrigger.SetActive(true);
+                }
+            }
+
+            if (AttackAnimationDuration < 0)
+            {
+                Debug.Log("anim attack false");
+
+                anim.SetBool("IsAttacking", false);
+                WasInRange = false;
+                IsAttacking = false;
+                AttackTrigger.SetActive(false);
+            }
         }
     }
 
