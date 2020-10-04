@@ -76,6 +76,7 @@ public class Enemy : MonoBehaviour
             Debug.Log("Destroyed enemy: " + gameObject.name);
             int coins = Random.Range(-1, 4);
             resourceManager.AddResource(ResourceType.Gold, coins);
+            resourceManager.AddResource(ResourceType.Kills, coins);
         }
 
         AttackDelay -= Time.deltaTime;
