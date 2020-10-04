@@ -36,7 +36,7 @@ public class Weapon : MonoBehaviour
 
     void fireBullet(Vector2 direction, float rotationZ)
     {
-        GameObject b = Instantiate(projectilePrefab, projectileStart.transform.position, Quaternion.identity);
+        GameObject b = Instantiate(projectilePrefab, projectileStart.transform.position, Quaternion.identity, transform.parent);
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
     }

@@ -1,14 +1,16 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 #pragma warning disable 649
 
 public class PlayerHealth : MonoBehaviour
 {
-    public TextMeshProUGUI HealthText;
-
     [SerializeField] private int health;
     [SerializeField] private int maxHealth;
     [SerializeField] private float invulnerableTimer;
+
+    [SerializeField] private List<GameObject> hearthSprites;
 
     private float StartInvulnerableTimer;
     private bool CanTakeDamage;
@@ -24,11 +26,22 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         StartInvulnerableTimer = invulnerableTimer;
-        HealthText.text = "" + health;
     }
 
     private void Update()
     {
+        for(int i = 0; i < hearthSprites.Count; i++)
+        {
+            if(i <= health)
+            {
+                hearthSprites[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                hearthSprites[i].gameObject.SetActive(false);
+            }
+        }
+
         if (invulnerableTimer > 0)
         {
             invulnerableTimer -= 1 * Time.deltaTime;
@@ -46,7 +59,6 @@ public class PlayerHealth : MonoBehaviour
             invulnerableTimer = StartInvulnerableTimer;
             CanTakeDamage = false;
             health--;
-            HealthText.text = "" + health;
 
             if(health <= 0f)
             {
