@@ -45,6 +45,9 @@ TagManager:
   - name: BG
     uniqueID: 1692579495
     locked: 0
+  - name: Shadow
+    uniqueID: 276997531
+    locked: 0
   - name: Walls
     uniqueID: 3430842021
     locked: 0
