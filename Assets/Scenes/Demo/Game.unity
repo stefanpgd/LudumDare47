@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2628,7 +2628,7 @@ PrefabInstance:
     - target: {fileID: 6939764287661943218, guid: 7379cc623d2668e4eb6d9e1996ae2fc2,
         type: 3}
       propertyPath: m_text
-      value: Dungeon of Time
+      value: Tempus Guardian
       objectReference: {fileID: 0}
     - target: {fileID: 6939764287661943219, guid: 7379cc623d2668e4eb6d9e1996ae2fc2,
         type: 3}
