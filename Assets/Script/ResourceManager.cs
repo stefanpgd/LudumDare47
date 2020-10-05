@@ -5,14 +5,13 @@ using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-
     public delegate void ResourceManagerUpdate();
     public event ResourceManagerUpdate ResourceManagerUpdateEvent;
 
     // Resources:
-    private int gold;
-    private int kills;
-    private int roomsCompleted;
+    public int gold;
+    public int kills;
+    public int roomsCompleted;
 
     #region Singleton
     public static ResourceManager Instance;
@@ -21,6 +20,11 @@ public class ResourceManager : MonoBehaviour
         Instance = this;
     }
     #endregion
+
+    private void Update()
+    {
+        ResourceManagerUpdateEvent?.Invoke();
+    }
 
     public void AddResource(ResourceType type, int value)
     {
@@ -82,5 +86,6 @@ public class ResourceManager : MonoBehaviour
         gold = 0;
         kills = 0;
         roomsCompleted = 0;
+        Debug.Log("reset");
     }
 }

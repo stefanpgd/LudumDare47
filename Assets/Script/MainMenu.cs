@@ -5,8 +5,9 @@ using UnityEngine.PlayerLoop;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private PlayerHealth playerHealth;
-    [SerializeField] private ResourceManager resourceManager;
+    //[SerializeField] private PlayerHealth playerHealth;
+    //[SerializeField] private ResourceManager resourceManager;
+    //[SerializeField] private ResourceManager ResourceManager => resourceManager ?? ResourceManager.Instance;
 
     [SerializeField] Transform m_room1transf;
     [SerializeField] Animator m_levelanimator;
@@ -20,10 +21,16 @@ public class MainMenu : MonoBehaviour
 
     public bool m_gamehasstarted;
 
-    public void Start()
+    public void Update()
     {
-        if (playerHealth == null)
-            playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        //if (resourceManager == null )
+        //{
+        //    resourceManager = GameObject.FindGameObjectWithTag("Player").GetComponent<ResourceManager>();
+        //}
+        //if (playerHealth == null )
+        //{
+        //    playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        //}
     }
 
     public void ReverseRooms()
@@ -66,7 +73,7 @@ public class MainMenu : MonoBehaviour
                         //Back to start?. Start game!
                         StartGame();
                     }
-                    Debug.Log("Time: " + m_levelanimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+                    //Debug.Log("Time: " + m_levelanimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
                 }
 
                 yield return null;
@@ -87,24 +94,35 @@ public class MainMenu : MonoBehaviour
         {
             obj.SetActive(false);
         }
-        //playerHealth stuff
-        playerHealth.health = 5;
-        playerHealth.m_EndScreen.SetActive(false);
-        playerHealth.m_PlayerUI.SetActive(true);
 
-        playerHealth.PlayerHasDied = false;  
-        Cursor.visible = false;
-
-        playerHealth.GetComponent<PlayerMovement>().enabled = true;
-        playerHealth.GetComponent<Weapon>().enabled = true;
-        //Resources stuff
-        resourceManager.ResetAllResources();
+        //if (resourceManager == null)
+        //{
+        //    resourceManager = GameObject.FindGameObjectWithTag("Player").GetComponent<ResourceManager>();
+        //}
+        //if (playerHealth == null)
+        //{
+        //    playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        //}
 
         //
         StopCoroutine("PlayAndWaitForAnim");
         m_gamehasstarted = true;
         m_levelanimator.SetFloat("RoomTurnSpeed", 1f);
         m_animationspeedmultiplier = 1f;
+
+        ////playerHealth stuff
+        //playerHealth.health = 5;
+        //playerHealth.m_EndScreen.SetActive(false);
+        //playerHealth.m_PlayerUI.SetActive(true);
+
+        //playerHealth.PlayerHasDied = false;  
+        //Cursor.visible = false;
+
+        //playerHealth.GetComponent<PlayerMovement>().enabled = true;
+        //playerHealth.GetComponent<Weapon>().enabled = true;
+
+        ////Resources stuff
+        //resourceManager.ResetAllResources();
     }
 
     //IEnumerator ReverseTime()
