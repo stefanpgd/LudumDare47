@@ -48,8 +48,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         for(int i = 0; i < emptyHearthSprites.Count; i++)
-        {
-            Debug.LogError("Doe Shit");
+        { 
             if (i < maxHealth)
             {
                 emptyHearthSprites[i].gameObject.SetActive(true);
@@ -80,8 +79,6 @@ public class PlayerHealth : MonoBehaviour
 
             if(health <= 0f)
             {
-                Debug.LogError("Player died...");
-
                 m_EndScreen.SetActive(true);
                 m_PlayerUI.SetActive(false);
 
