@@ -10,20 +10,21 @@ public class DoorChecker : MonoBehaviour
 
     [SerializeField] private GameObject m_RoomCamera;
     [SerializeField] private CameraSwitch m_GameManager;
+    [SerializeField] private PlayerMovement m_Player;
 
     private bool m_CanUse;
     private GameObject m_NextRoom;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(isInteractable)
+        if (collision.gameObject.CompareTag("Door"))
         {
-            if (collision.gameObject.CompareTag("Door"))
-            {
-                m_CanUse = true;
-                m_NextRoom = collision.gameObject;
-            }
+            m_CanUse = true;
+            m_NextRoom = collision.gameObject;
+        }
 
+        if (isInteractable)
+        { 
             if (collision.gameObject.CompareTag("Player") && m_CanUse)
             {
                 collision.gameObject.transform.position = m_NextRoom.transform.GetChild(0).transform.position;
@@ -36,6 +37,9 @@ public class DoorChecker : MonoBehaviour
                 m_Black.SetActive(true);
                 room.DisableRoom();
 
+                m_Player.enabled = false;
+                m_Player.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
                 m_GameManager.NextRoom(door.m_RoomCamera);
             }
         }
@@ -43,12 +47,9 @@ public class DoorChecker : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (isInteractable)
+        if (collision.gameObject.CompareTag("Door"))
         {
-            if (collision.gameObject.CompareTag("Door"))
-            {
-                m_CanUse = false;
-            }
+            m_CanUse = false;
         }
     }
 }

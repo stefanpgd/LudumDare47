@@ -1,5 +1,6 @@
 ﻿public enum ResourceType 
 {
     Gold,
-    Kills
+    Kills,
+    RoomsCompleted
 }
