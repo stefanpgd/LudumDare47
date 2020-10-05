@@ -62,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
             CanTakeDamage = false;
             health--;
 
-            if(health < 0f)
+            if(health <= 0f)
             {
                 Debug.LogError("Player died...");
 
