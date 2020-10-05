@@ -5,6 +5,9 @@ using UnityEngine.PlayerLoop;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] private ResourceManager resourceManager;
+
     [SerializeField] Transform m_room1transf;
     [SerializeField] Animator m_levelanimator;
     [SerializeField] List<GameObject> m_gamestartactivate;
@@ -15,7 +18,13 @@ public class MainMenu : MonoBehaviour
     [SerializeField] AudioSource m_backwardsclockticking;
     [SerializeField] AudioSource m_clockstroke;
 
-    bool m_gamehasstarted;
+    public bool m_gamehasstarted;
+
+    public void Start()
+    {
+        if (playerHealth == null)
+            playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+    }
 
     public void ReverseRooms()
     {
@@ -78,7 +87,20 @@ public class MainMenu : MonoBehaviour
         {
             obj.SetActive(false);
         }
+        //playerHealth stuff
+        playerHealth.health = 5;
+        playerHealth.m_EndScreen.SetActive(false);
+        playerHealth.m_PlayerUI.SetActive(true);
 
+        playerHealth.PlayerHasDied = false;  
+        Cursor.visible = false;
+
+        playerHealth.GetComponent<PlayerMovement>().enabled = true;
+        playerHealth.GetComponent<Weapon>().enabled = true;
+        //Resources stuff
+        resourceManager.ResetAllResources();
+
+        //
         StopCoroutine("PlayAndWaitForAnim");
         m_gamehasstarted = true;
         m_levelanimator.SetFloat("RoomTurnSpeed", 1f);

@@ -6,16 +6,18 @@ using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int health;
+    [SerializeField] private MainMenu mainMenu;
+    public int health;
     [SerializeField] private int maxHealth;
     [SerializeField] private float invulnerableTimer;
 
     [SerializeField] private List<GameObject> hearthSprites;
 
-    [SerializeField] private GameObject m_EndScreen, m_PlayerUI;
+    public GameObject m_EndScreen, m_PlayerUI;
 
     private float StartInvulnerableTimer;
     private bool CanTakeDamage;
+    public bool PlayerHasDied;
 
     #region Singleton
 
@@ -69,8 +71,10 @@ public class PlayerHealth : MonoBehaviour
                 m_EndScreen.SetActive(true);
                 m_PlayerUI.SetActive(false);
 
+                PlayerHasDied = true;
                 Cursor.visible = true;
 
+                mainMenu.m_gamehasstarted = false;
                 GetComponent<PlayerMovement>().enabled = false;
                 GetComponent<Weapon>().enabled = false;
             }

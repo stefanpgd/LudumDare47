@@ -3,6 +3,7 @@
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] private PlayerHealth playerHealth;
     Rigidbody2D RigidBody;
     Animator anim;
 
@@ -34,6 +35,9 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        if (playerHealth == null)
+            playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+
         if (Target == null)
             Target = GameObject.FindGameObjectWithTag("Player").transform;
 
@@ -88,7 +92,7 @@ public class Enemy : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, Target.position, MoveSpeed * Time.deltaTime);
 
         }
-        else if (Vector2.Distance(transform.position, Target.position) < StoppingDistance && WasInRange == false)
+        else if (Vector2.Distance(transform.position, Target.position) < StoppingDistance && WasInRange == false && playerHealth.PlayerHasDied == false)
         {
             transform.position = this.transform.position;
             AttackAnimationDuration = StartAttackAnimationDuration;
@@ -119,7 +123,7 @@ public class Enemy : MonoBehaviour
                 }
             }
 
-            if (AttackAnimationDuration < 0)
+            if (AttackAnimationDuration < 0 || playerHealth.PlayerHasDied)
             {
                 anim.SetBool("IsAttacking", false);
                 WasInRange = false;
