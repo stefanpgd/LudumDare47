@@ -1684,7 +1684,7 @@ Transform:
   m_Children:
   - {fileID: 119902089}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2141793928
 MonoBehaviour:
@@ -2457,7 +2457,7 @@ Transform:
   m_Children:
   - {fileID: 4190858893974169514}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559105491689900084
 GameObject:
@@ -2540,6 +2540,133 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &713839754697898404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821214701924117057}
+  - component: {fileID: 2577133176711636448}
+  m_Layer: 0
+  m_Name: ClockStroke
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &821214701924117057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713839754697898404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5537763701834316210}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2577133176711636448
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713839754697898404}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 802a694f7c3b6724fb8b6da0af44655a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1094923375086331652
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,6 +3240,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 1471552237502300592}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &7073191855078112696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3885,6 +4013,133 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!1 &4150305129784508972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8138078120912357913}
+  - component: {fileID: 71953814580697933}
+  m_Layer: 0
+  m_Name: DungeonTheme
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8138078120912357913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150305129784508972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5537763701834316210}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &71953814580697933
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150305129784508972}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 72c0d1689529022488f7633faae52497, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4190858892936041790
 GameObject:
   m_ObjectHideFlags: 0
@@ -13230,6 +13485,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701978912176}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701415142121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13409,6 +13665,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702177379369}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701431386823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17072,7 +17329,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763701513106101
 MonoBehaviour:
@@ -17088,6 +17345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TotalView: {fileID: 2141793927}
   m_TotalViewTime: 1.5
+  m_Player: {fileID: 0}
 --- !u!1 &5537763701534770496
 GameObject:
   m_ObjectHideFlags: 0
@@ -17951,7 +18209,7 @@ Transform:
   - {fileID: 4190858893556888091}
   - {fileID: 4190858894279967777}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763701584824779
 MonoBehaviour:
@@ -18010,7 +18268,7 @@ Transform:
   - {fileID: 4190858893531513731}
   - {fileID: 4190858893224611123}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763701588723595
 MonoBehaviour:
@@ -18113,6 +18371,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763703213213354}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701604766321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18241,6 +18500,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701497745808}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701608761504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19374,6 +19634,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702177379369}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701638338153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19502,6 +19763,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701444210183}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701645931422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20878,6 +21140,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701978912176}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701747919977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22086,6 +22349,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 821214701924117057}
+  - {fileID: 8138078120912357913}
   - {fileID: 5537763702854791614}
   - {fileID: 5537763701513106100}
   - {fileID: 5537763702688025958}
@@ -22105,6 +22370,7 @@ Transform:
   - {fileID: 5537763702453059368}
   - {fileID: 2141793929}
   - {fileID: 4170901575582052567}
+  - {fileID: 300285613290443853}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22270,7 +22536,7 @@ Transform:
   - {fileID: 4190858893265097756}
   - {fileID: 4190858894171689106}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763701840513695
 MonoBehaviour:
@@ -24660,6 +24926,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701806576320}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701873601006
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25027,6 +25294,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702500681821}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701910944613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25219,6 +25487,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702435503771}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701925754296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25317,6 +25586,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702529908964}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763701954408626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28656,6 +28926,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702435503771}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702046379371
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28740,7 +29011,7 @@ Transform:
   - {fileID: 4190858893319900042}
   - {fileID: 4190858893512463246}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763702047230541
 MonoBehaviour:
@@ -28813,6 +29084,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763703066000488}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702055877970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29852,6 +30124,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701497745808}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702079008371
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29936,7 +30209,7 @@ Transform:
   - {fileID: 4190858895026580825}
   - {fileID: 4190858894661505129}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763702090531414
 MonoBehaviour:
@@ -30039,6 +30312,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701497745808}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702133139956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30137,6 +30411,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702529908964}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702137765778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32856,6 +33131,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763703213213354}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702359768688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32954,6 +33230,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701863272262}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702368905637
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33052,6 +33329,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763703066000488}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702369234251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33150,6 +33428,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702529908964}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702375532401
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34430,7 +34709,7 @@ Transform:
   - {fileID: 5537763702456643090}
   - {fileID: 5537763702418196823}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5537763702456643088
 GameObject:
@@ -34661,6 +34940,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701806576320}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702504087499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34826,6 +35106,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763703066000488}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702539282930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34958,6 +35239,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701863272262}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702550267800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35042,7 +35324,7 @@ Transform:
   - {fileID: 4190858893889139505}
   - {fileID: 4190858894705933381}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763702557477927
 MonoBehaviour:
@@ -35145,6 +35427,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702529908964}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702583934065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35243,6 +35526,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702973501381}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702588683510
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36376,6 +36660,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763703213213354}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702619855906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36474,6 +36759,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701444210183}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702665569421
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37244,7 +37530,7 @@ Transform:
   - {fileID: 4190858893961886529}
   - {fileID: 4190858893523214916}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763702688025953
 MonoBehaviour:
@@ -37317,6 +37603,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702435503771}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702701063416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37445,6 +37732,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702500681821}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702722008654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38690,6 +38978,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702973501381}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702770262462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38788,6 +39077,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702500681821}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702801952806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39010,6 +39300,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701806576320}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702823907437
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39754,7 +40045,7 @@ Transform:
   m_Children:
   - {fileID: 5537763701923193671}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763702854791615
 MonoBehaviour:
@@ -41159,6 +41450,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701806576320}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702898514870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43698,6 +43990,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702500681821}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702949541712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44560,6 +44853,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701497745808}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763702977539611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46779,7 +47073,7 @@ Transform:
   - {fileID: 5537763703247099606}
   - {fileID: 5537763702007625137}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5537763703034272606
 GameObject:
@@ -48097,6 +48391,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702973501381}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703066872152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49358,7 +49653,7 @@ Transform:
   - {fileID: 4190858893461365432}
   - {fileID: 4190858893181121884}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763703145992106
 MonoBehaviour:
@@ -49431,6 +49726,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701978912176}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703161282537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49589,6 +49885,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763703066000488}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703203961714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51019,7 +51316,7 @@ Transform:
   - {fileID: 4190858894768840020}
   - {fileID: 4190858894359025579}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763703247315922
 MonoBehaviour:
@@ -51108,7 +51405,7 @@ Transform:
   - {fileID: 4190858894928548656}
   - {fileID: 4190858894769512230}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763703256283201
 MonoBehaviour:
@@ -51467,6 +51764,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701863272262}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703291066904
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51565,6 +51863,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701444210183}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703293825316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51663,6 +51962,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702973501381}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703309711255
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51761,6 +52061,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702177379369}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703312248289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51859,6 +52160,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701444210183}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703330014677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51957,6 +52259,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763703213213354}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703331183345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54386,7 +54689,7 @@ Transform:
   - {fileID: 4190858894225823386}
   - {fileID: 4190858893635834815}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763703384013799
 MonoBehaviour:
@@ -54445,7 +54748,7 @@ Transform:
   - {fileID: 4190858894125168377}
   - {fileID: 4190858895003459300}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5537763703388181022
 MonoBehaviour:
@@ -54518,6 +54821,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701863272262}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703395026849
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54710,6 +55014,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702177379369}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703429405778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56290,6 +56595,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763701978912176}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703470940149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56422,6 +56728,7 @@ MonoBehaviour:
   isInteractable: 1
   m_RoomCamera: {fileID: 5537763702435503771}
   m_GameManager: {fileID: 5537763701513106101}
+  m_Player: {fileID: 0}
 --- !u!61 &5537763703492738798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56507,7 +56814,7 @@ Transform:
   - {fileID: 2255789232809431935}
   - {fileID: 700944808819705028}
   m_Father: {fileID: 5537763701834316210}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7812907146025944035
 MonoBehaviour:
@@ -56524,6 +56831,133 @@ MonoBehaviour:
   enemySpawners: []
   doors:
   - {fileID: 4243383963612748790}
+--- !u!1 &6036063510041460570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 300285613290443853}
+  - component: {fileID: 8024458274348987862}
+  m_Layer: 0
+  m_Name: ClockTickBackwards
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &300285613290443853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036063510041460570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5537763701834316210}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &8024458274348987862
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036063510041460570}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f0a9b642a8697d643abd1460336fe31d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6392301017468801501
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,11 +11,16 @@ public class MainMenu : MonoBehaviour
     [SerializeField] List<GameObject> m_mainmenu;
     [SerializeField] float m_animationspeedmultiplier;
     [SerializeField] float m_maxreversespeed;
+    [SerializeField] AudioSource m_menusoundtrack;
+    [SerializeField] AudioSource m_backwardsclockticking;
+    [SerializeField] AudioSource m_clockstroke;
 
     bool m_gamehasstarted;
 
     public void ReverseRooms()
     {
+        m_menusoundtrack.Stop();
+        m_clockstroke.Play();
         StartCoroutine("PlayAndWaitForAnim");
     }
 
@@ -23,6 +28,8 @@ public class MainMenu : MonoBehaviour
     {
         if (m_gamehasstarted == false)
         {
+            yield return new WaitForSeconds(1);
+
             while ((m_levelanimator.GetCurrentAnimatorStateInfo(0).normalizedTime) % 1 < 0.99f)
             {
                 if (m_animationspeedmultiplier > 0)
@@ -37,6 +44,11 @@ public class MainMenu : MonoBehaviour
                 }
                 else
                 {
+                    if (!m_backwardsclockticking.isPlaying)
+                    {
+                        m_backwardsclockticking.Play();
+                    }
+
                     m_animationspeedmultiplier = m_animationspeedmultiplier - 0.05f;
                     m_levelanimator.SetFloat("RoomTurnSpeed", m_animationspeedmultiplier);
                     if (m_room1transf.position == Vector3.zero)
@@ -55,6 +67,8 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        m_backwardsclockticking.Stop();
+
         foreach(GameObject obj in m_gamestartactivate)
         {
             obj.SetActive(true);
