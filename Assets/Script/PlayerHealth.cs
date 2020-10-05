@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float invulnerableTimer;
 
     [SerializeField] private List<GameObject> hearthSprites;
+    [SerializeField] private List<GameObject> emptyHearthSprites;
 
     public GameObject m_EndScreen, m_PlayerUI;
 
@@ -43,6 +44,19 @@ public class PlayerHealth : MonoBehaviour
             else
             {
                 hearthSprites[i].gameObject.SetActive(false);
+            }
+        }
+
+        for(int i = 0; i < emptyHearthSprites.Count; i++)
+        {
+            Debug.LogError("Doe Shit");
+            if (i < maxHealth)
+            {
+                emptyHearthSprites[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                emptyHearthSprites[i].gameObject.SetActive(false);
             }
         }
 
