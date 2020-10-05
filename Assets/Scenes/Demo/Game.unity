@@ -2560,6 +2560,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7859765594792926893, guid: 7379cc623d2668e4eb6d9e1996ae2fc2,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 81055af329128894b9a88b37e2f6529f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7379cc623d2668e4eb6d9e1996ae2fc2, type: 3}
 --- !u!1 &1223275497 stripped
@@ -3905,6 +3910,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 382799986, guid: 6ad1da38943909444b5c59f86c8aec7c, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 71953814580697933, guid: 6ad1da38943909444b5c59f86c8aec7c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 47844153fb4f6134394ed283e2bb8df5, type: 3}
     - target: {fileID: 4013829353357604992, guid: 6ad1da38943909444b5c59f86c8aec7c,
         type: 3}
       propertyPath: emptyHearthSprites.Array.size
@@ -4090,6 +4104,11 @@ PrefabInstance:
       propertyPath: m_TileAssetArray.Array.data[21].m_Data
       value: 
       objectReference: {fileID: 1289986123}
+    - target: {fileID: 4317995468729413023, guid: 6ad1da38943909444b5c59f86c8aec7c,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4742914713890385620, guid: 6ad1da38943909444b5c59f86c8aec7c,
         type: 3}
       propertyPath: m_Color.a
