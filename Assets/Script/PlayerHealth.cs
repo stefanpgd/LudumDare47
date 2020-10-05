@@ -14,6 +14,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private List<GameObject> hearthSprites;
     [SerializeField] private List<GameObject> emptyHearthSprites;
 
+    [SerializeField] private GameObject m_Blood;
+
     public GameObject m_EndScreen, m_PlayerUI;
 
     private float StartInvulnerableTimer;
@@ -76,6 +78,8 @@ public class PlayerHealth : MonoBehaviour
             invulnerableTimer = StartInvulnerableTimer;
             CanTakeDamage = false;
             health--;
+
+            Instantiate(m_Blood, transform.position, Quaternion.identity);
 
             if(health <= 0f)
             {

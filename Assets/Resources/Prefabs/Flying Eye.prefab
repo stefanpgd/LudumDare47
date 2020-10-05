@@ -147,6 +147,10 @@ MonoBehaviour:
   AttackDelay: 2
   AttackHitboxAppear: 0
   audio: {fileID: 370525351397435165}
+  m_Bones: {fileID: 6988965765521187103, guid: a349269d06654254c98c15ec4808a899, type: 3}
+  m_Blood: {fileID: 5844443107970138393, guid: bf5baa05940f7274ea2b338982716726, type: 3}
+  m_SlimeStuff: {fileID: 2568712359399869432, guid: dbfce9732e4a73544bf9d8b90b9207b9,
+    type: 3}
 --- !u!50 &7796990249131055379
 Rigidbody2D:
   serializedVersion: 4

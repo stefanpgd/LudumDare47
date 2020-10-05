@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float AttackHitboxAppear = 0.4f;
     [SerializeField] private AudioSource audio;
 
+    [SerializeField] private GameObject m_Bones, m_Blood, m_SlimeStuff;
+
     private float StartAttackAnimationDuration;
     private float StartAttackDelay;
 
@@ -144,7 +146,21 @@ public class Enemy : MonoBehaviour
 
             if(enemyType == EnemyType.Skeleton)
             {
-                audio.Play();
+                
+            }
+
+            switch (enemyType)
+            {
+                case EnemyType.Skeleton:
+                    Instantiate(m_Bones, transform.position, Quaternion.identity);
+                    audio.Play();
+                    break;
+                case EnemyType.Slime:
+                    Instantiate(m_SlimeStuff, transform.position, Quaternion.identity);
+                    break;
+                case EnemyType.FlyingEye:
+                    Instantiate(m_Blood, transform.position, Quaternion.identity);
+                    break;
             }
         }
     }
