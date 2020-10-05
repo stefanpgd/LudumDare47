@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour
 
         AttackDelay -= Time.deltaTime;
 
-        if (Vector2.Distance(transform.position, Target.position) > StoppingDistance && IsAttacking == false)
+        if (Vector2.Distance(transform.position, Target.position) > StoppingDistance && IsAttacking == false && playerHealth.PlayerHasDied == false)
         {
             transform.position = Vector2.MoveTowards(transform.position, Target.position, MoveSpeed * Time.deltaTime);
 
